@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Регистрация | Новостной портал</title>
+  <link rel="stylesheet" href="css/registration.css">
+  <script src="js/registration.js" defer></script>
+</head>
+
+  <main>
+    <div class="container">
+      <div class="registration">
+        <a href="index.html" class="registration__logo-link">
+          <img src="img/logo.svg" alt="Логотип страницы" class="registration__logo">
+        </a>
+        <div class="registration__block">
+          <span class="registration__text">Регистрация</span>
+          <form class="registration__form">
+            <label class="registration__label">
+              <span>Почта</span>
+              <input type="email" class="registration__input" placeholder="Введите свой email"  />
+            </label>
+            <label class="registration__label registration__label-password">
+              <span>Пароль</span>
+              <input type="password" class="registration__input registration__input-password" placeholder="Введите свой пароль" />
+              <button class="registration__password">
+
+              </button>
+            </label>
+            <label class="registration__label registration__label-checkbox">
+              <input type="checkbox" class="registration__checkbox-inp"  checked/>
+              <span class="registration__box"></span>
+              <span class="registration__remember">Запомнить</span>
+            </label>
+            <button class="registration__btn" type="submit">Зарегистрироваться</button>
+          </form>
+          <span class="registration__policy">Нажимая кнопку входа, вы принимаете условия <br> <a href="#">Пользовательского соглашения</a> и <a href="#">Политики конфиденциальности</a></span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</html> 

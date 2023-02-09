@@ -1,0 +1,25 @@
+.cathegory {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 16%;
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--black-color);
+
+    &.is-active {
+      font-weight: 600;
+      border-bottom: 4px solid var(--black-color);
+    }
+    // @include big-desktop {
+    //   font-size: 18px;
+    // }
+  }
+}

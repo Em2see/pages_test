@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Новостной портал</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-top">
+      <div class="container header-top__container">
+        <div class="header-top__block">
+          <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+            <span class="burger__line"></span>
+          </button>
+          <div class="header-top__left">
+            <a href="#" class="header-top__logo-link">
+              <img src="img/logo.svg" alt="Логотип страницы" class="header-top__logo">
+            </a>
+          </div>
+            <nav class="nav header-top__nav" data-menu>
+              <ul class="list-reset header-top__list">
+                <li class="header-top__item">
+                  <a href="#" data-menu-item class="header-top__link is-active">Лента</a>
+                </li>
+                <li class="header-top__item">
+                  <a href="#" data-menu-item class="header-top__link">Источники</a>
+                </li>
+                <li class="header-top__item">
+                  <a href="#" data-menu-item class="header-top__link">Настройки</a>
+                </li>
+                <li class="header-top__item">
+                  <a href="#" id="header-channel" data-menu-item class="header-top__link">
+                    Каналы
+                    <span class="arrow-down"></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a href="registration.html" class="header-top__personal-link">
+              <span>Войти</span>
+            </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom__block">
+          <ul class="list-reset header-bottom__list">
+            <li class="header-bottom__item"><a href="#" class="header-bottom__link">Главное</a></li>
+            <li class="header-bottom__item"><a href="#" class="header-bottom__link">Сегодня</a></li>
+            <li class="header-bottom__item"><a href="#" class="header-bottom__link">Популярные</a></li>
+            <li class="header-bottom__item"><a href="#" class="header-bottom__link">За неделю</a></li>
+            <li class="header-bottom__item"><a href="#" class="header-bottom__link">За месяц</a></li>
+            <li class="header-bottom__item"><a href="#" class="header-bottom__link">
+              По дате
+              <span class="arrow-down"></span>
+            </a></li>
+          </ul>
+          <div class="header-bottom__search">
+            <input type="search" class="header-bottom__search-input" placeholder="Поиск">
+            <button class="header-bottom__search-btn"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="main-block">
+        <!-- список категорий -->
+        <ul class="list-reset cathegory">
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link is-active">Главное</a>
+          </li>
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link">Россия</a>
+          </li>
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link">Мир</a>
+          </li>
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link">Интересное</a>
+          </li>
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link">Политика</a>
+          </li>
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link">Общество</a>
+          </li>
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link">Экономика</a>
+          </li>
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link">Спорт</a>
+          </li>
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link">Происшествия</a>
+          </li>
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link">Культура</a>
+          </li>
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link">Технология</a>
+          </li>
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link">Красота и здоровье</a>
+          </li>
+          <li class="cathegory__item">
+            <a href="#" class="cathegory__link">Ещё</a>
+          </li>
+        </ul>
+
+        <!-- блок новостей -->
+        <div class="right-block">
+          <!-- хэштеги -->
+          <div class="hashtags">
+            <ul class="list-reset hashtags__list">
+              <li class="hashtags__item">
+                <a href="#" class="hashtags__link">#сегодняпопулярно</a>
+              </li>
+              <li class="hashtags__item">
+                <a href="#" class="hashtags__link">#туризм</a>
+              </li>
+              <li class="hashtags__item">
+                <a href="#" class="hashtags__link">#россиякитай</a>
+              </li>
+              <li class="hashtags__item">
+                <a href="#" class="hashtags__link">#дипломатия</a>
+              </li>
+              <li class="hashtags__item">
+                <a href="#" class="hashtags__link">#геополитика</a>
+              </li>
+              <li class="hashtags__item">
+                <a href="#" class="hashtags__link">#экстренныеновости</a>
+              </li>
+              <li class="hashtags__item">
+                <a href="#" class="hashtags__link">#ITтехнологии</a>
+              </li>
+              <li class="hashtags__item">
+                <a href="#" class="hashtags__link">#дизайн</a>
+              </li>
+              <li class="hashtags__item">
+                <a href="#" class="hashtags__link">#главныесобытия</a>
+              </li>
+            </ul>
+          </div>
+          <div class="news-block">
+            <!-- новость с картинкой -->
+            <div class="news">
+              <div class="news__left">
+                <img src="img/news_1.png" alt="Картинка" class="news__img">
+              </div>
+              <div class="news__info">
+                <div class="news__info-top">
+                  <div class="channel-author">
+                    <img src="img/channel_1.png" alt="#" class="channel-author__img">
+                    <div class="channel-author__info">
+                      <span class="channel-author__name">Новостной портал</span>
+                      <span class="channel-author__update">7 часов</span>
+                    </div>
+                  </div>
+                  <button class="news__save"></button>
+                </div>
+                <div class="news__info-main">
+                  <h2 class="news__title news__title">Сколько времени человек тратит на социальные сети и почему </h2>
+                  <p class="news__text news__text">Почему в пуховике не тренируются, где начинать бегать на лыжах и как правильно падать, рассказывает мастер спорта по лыжным гонкам.</p>
+                </div>
+                <div class="hashtags">
+                  <ul class="list-reset hashtags__list">
+                    <li class="hashtags__item"><a href="#" class="hashtags__link">#сегодняпопулярно</a></li>
+                    <li class="hashtags__item"><a href="#" class="hashtags__link">#туризм</a></li>
+                  </ul>
+                </div>
+                <div class="news__info-bottom">
+                  <ul class="list-reset">
+                    <li class="news__action-item">
+                      <button class="news__like"></button>
+                    </li>
+                    <li class="news__action-item">
+                      <button class="news__comment"></button>
+                    </li>
+                    <li class="news__action-item">
+                      <button class="news__share"></button>
+                    </li>
+                  </ul>
+                  <div class="news__views">
+                    <span class="news__views-number">1K</span>
+                    <span class="news__views-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- новость без картинки -->
+            <div class="news no-image">
+              <div class="news__info">
+                <div class="news__info-top">
+                  <div class="channel-author">
+                    <img src="img/channel_2.png" alt="#" class="channel-author__img">
+                    <div class="channel-author__info">
+                      <span class="channel-author__name">Новостной портал самых важных новостей</span>
+                      <span class="channel-author__update">7 часов</span>
+                    </div>
+                  </div>
+                  <button class="news__save"></button>
+                </div>
+                <div class="news__info-main">
+                  <h2 class="news__title news__title">Советы лыжникам-новичкам на склонах горной шории в Шерегеше</h2>
+                  <p class="news__text news__text">Таким образом новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Повседневная практика показывает, что это начало.</p>
+                </div>
+                <div class="hashtags">
+                  <ul class="list-reset hashtags__list">
+                    <li class="hashtags__item"><a href="#" class="hashtags__link">#туризм</a></li>
+                  </ul>
+                </div>
+                <div class="news__info-bottom">
+                  <ul class="list-reset">
+                    <li class="news__action-item">
+                      <button class="news__like"></button>
+                    </li>
+                    <li class="news__action-item">
+                      <button class="news__comment"></button>
+                    </li>
+                    <li class="news__action-item">
+                      <button class="news__share"></button>
+                    </li>
+                  </ul>
+                  <div class="news__views">
+                    <span class="news__views-number">1K</span>
+                    <span class="news__views-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- новость без картинки -->
+            <div class="news no-image">
+              <div class="news__info">
+                <div class="news__info-top">
+                  <div class="channel-author">
+                    <img src="img/channel_2.png" alt="#" class="channel-author__img">
+                    <div class="channel-author__info">
+                      <span class="channel-author__name">Новостной портал самых важных новостей</span>
+                      <span class="channel-author__update">7 часов</span>
+                    </div>
+                  </div>
+                  <button class="news__save"></button>
+                </div>
+                <div class="news__info-main">
+                  <h2 class="news__title news__title">Советы лыжникам-новичкам на склонах горной шории в Шерегеше</h2>
+                  <p class="news__text news__text">Таким образом новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Повседневная практика показывает, что это начало.</p>
+                </div>
+                <div class="hashtags">
+                  <ul class="list-reset hashtags__list">
+                    <li class="hashtags__item"><a href="#" class="hashtags__link">#туризм</a></li>
+                  </ul>
+                </div>
+                <div class="news__info-bottom">
+                  <ul class="list-reset">
+                    <li class="news__action-item">
+                      <button class="news__like"></button>
+                    </li>
+                    <li class="news__action-item">
+                      <button class="news__comment"></button>
+                    </li>
+                    <li class="news__action-item">
+                      <button class="news__share"></button>
+                    </li>
+                  </ul>
+                  <div class="news__views">
+                    <span class="news__views-number">1K</span>
+                    <span class="news__views-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- новость с картинкой -->
+            <div class="news">
+              <div class="news__left">
+                <img src="img/news_2.png" alt="Картинка" class="news__img">
+              </div>
+              <div class="news__info">
+                <div class="news__info-top">
+                  <div class="channel-author">
+                    <img src="img/channel_1.png" alt="#" class="channel-author__img">
+                    <div class="channel-author__info">
+                      <span class="channel-author__name">Новостной портал</span>
+                      <span class="channel-author__update">7 часов</span>
+                    </div>
+                  </div>
+                  <button class="news__save"></button>
+                </div>
+                <div class="news__info-main">
+                  <h2 class="news__title news__title">Самый популярный язык программирования</h2>
+                  <p class="news__text news__text">Почему в пуховике не тренируются, где начинать бегать на лыжах и как правильно падать, рассказывает мастер спорта по лыжным гонкам.</p>
+                </div>
+                <div class="hashtags">
+                  <ul class="list-reset hashtags__list">
+                    <li class="hashtags__item"><a href="#" class="hashtags__link">#сегодняпопулярно</a></li>
+                    <li class="hashtags__item"><a href="#" class="hashtags__link">#туризм</a></li>
+                  </ul>
+                </div>
+                <div class="news__info-bottom">
+                  <ul class="list-reset">
+                    <li class="news__action-item">
+                      <button class="news__like"></button>
+                    </li>
+                    <li class="news__action-item">
+                      <button class="news__comment"></button>
+                    </li>
+                    <li class="news__action-item">
+                      <button class="news__share"></button>
+                    </li>
+                  </ul>
+                  <div class="news__views">
+                    <span class="news__views-number">1K</span>
+                    <span class="news__views-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- новость с картинкой -->
+            <div class="news">
+              <div class="news__left">
+                <img src="img/news_3.png" alt="Картинка" class="news__img">
+              </div>
+              <div class="news__info">
+                <div class="news__info-top">
+                  <div class="channel-author">
+                    <img src="img/channel_1.png" alt="#" class="channel-author__img">
+                    <div class="channel-author__info">
+                      <span class="channel-author__name">Новостной портал</span>
+                      <span class="channel-author__update">7 часов</span>
+                    </div>
+                  </div>
+                  <button class="news__save"></button>
+                </div>
+                <div class="news__info-main">
+                  <h2 class="news__title news__title">Как ведут себя популярные блогеры</h2>
+                  <p class="news__text news__text">Почему в пуховике не тренируются, где начинать бегать на лыжах и как правильно падать, рассказывает мастер спорта по лыжным гонкам.</p>
+                </div>
+                <div class="hashtags">
+                  <ul class="list-reset hashtags__list">
+                    <li class="hashtags__item"><a href="#" class="hashtags__link">#сегодняпопулярно</a></li>
+                    <li class="hashtags__item"><a href="#" class="hashtags__link">#туризм</a></li>
+                  </ul>
+                </div>
+                <div class="news__info-bottom">
+                  <ul class="list-reset">
+                    <li class="news__action-item">
+                      <button class="news__like"></button>
+                    </li>
+                    <li class="news__action-item">
+                      <button class="news__comment"></button>
+                    </li>
+                    <li class="news__action-item">
+                      <button class="news__share"></button>
+                    </li>
+                  </ul>
+                  <div class="news__views">
+                    <span class="news__views-number">1K</span>
+                    <span class="news__views-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- новость без картинки -->
+            <div class="news no-image">
+              <div class="news__info">
+                <div class="news__info-top">
+                  <div class="channel-author">
+                    <img src="img/channel_2.png" alt="#" class="channel-author__img">
+                    <div class="channel-author__info">
+                      <span class="channel-author__name">Новостной портал самых важных новостей</span>
+                      <span class="channel-author__update">7 часов</span>
+                    </div>
+                  </div>
+                  <button class="news__save"></button>
+                </div>
+                <div class="news__info-main">
+                  <h2 class="news__title news__title">Советы лыжникам-новичкам на склонах горной шории в Шерегеше</h2>
+                  <p class="news__text news__text">Таким образом новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Повседневная практика показывает, что это начало.</p>
+                </div>
+                <div class="hashtags">
+                  <ul class="list-reset hashtags__list">
+                    <li class="hashtags__item"><a href="#" class="hashtags__link">#туризм</a></li>
+                  </ul>
+                </div>
+                <div class="news__info-bottom">
+                  <ul class="list-reset">
+                    <li class="news__action-item">
+                      <button class="news__like"></button>
+                    </li>
+                    <li class="news__action-item">
+                      <button class="news__comment"></button>
+                    </li>
+                    <li class="news__action-item">
+                      <button class="news__share"></button>
+                    </li>
+                  </ul>
+                  <div class="news__views">
+                    <span class="news__views-number">1K</span>
+                    <span class="news__views-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal">
+    <div class="modal-channel">
+      <ul class="list-reset modal-channel__block">
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Афиша 24</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">РИА Новости</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">НТВ+</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Камеди Дом</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">НЭН</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Афиша 24</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Афиша 24</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">РИА Новости</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">НТВ+</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Камеди Дом</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">НЭН</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Афиша 24</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Афиша 24</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">РИА Новости</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">НТВ+</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Камеди Дом</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">НЭН</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Афиша 24</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Афиша 24</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">РИА Новости</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">НТВ+</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Камеди Дом</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">НЭН</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Афиша 24</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Афиша 24</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">РИА Новости</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">НТВ+</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Камеди Дом</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">НЭН</span>
+        </li>
+        <li class="modal-channel__item">
+          <div class="modal-channel__img-block">
+            <img src="img/channel_1.png" alt="Фотография канала" class="modal-channel__img">
+          </div>
+          <span class="modal-channel__channel-name">Афиша 24</span>
+        </li>
+      </ul>
+      <a href="#" class="modal-channel__show-more">Показать все</a>
+    </div>
+  </div>
+
+  <div class="overlay" data-overlay></div>
+
+</body>
+</html>
